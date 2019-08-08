@@ -8,6 +8,8 @@ A: It creates a redux store that holds complete state tree of an application.
   Reducer: A reducer function accept collections and a value and return new collections, used to reduce a collection of                  values down to a single value.
   initialState/preloadedState: Pre initialise state value, hydrate the state from the server in universal apps
   enhancer: enhance the store with third-party capabilities such as middleware
+  
+-----------------------------------------------------------------------------------------------------------------------------
 
 Q: What is Dispatch?
 A: Dispatch is an action, it's the only way to trigger state change in redux. Internally store reducing function will be called    with getState() result and given action synchronously, return value will be considered the next state. It will be returned      from getState() and the change listeners will immediately be notified.
